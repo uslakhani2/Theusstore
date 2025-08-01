@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>THEUSSTORE · Shopping Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">THEUSSTORE</div>
+      <div class="tagline">Your Cart</div>
+    </div>
+  </header>
+
+  <main class="shopping-cart" aria-label="Shopping Cart">
+    <div class="title">
+      <div class="title-text">Shopping Bag</div>
+      <div class="summary-brief">
+        <span id="item-count">3 items</span>
+        <span class="divider">•</span>
+        <span id="subtotal-text">Subtotal: $1,768</span>
+      </div>
+    </div>
+
+    <div class="items-wrapper" id="cart-items">
+      <!-- Product #1 -->
+      <div class="item" data-id="1">
+        <div class="buttons">
+          <button class="icon-btn delete-btn" aria-label="Remove item">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M9 3v1H4v2h16V4h-5V3H9zm2 6v8h2v-8h-2zm-4 0v8h2v-8H7zm8 0v8h2v-8h-2zM5 9h14v10c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V9z"/>
+            </svg>
+          </button>
+          <button class="icon-btn like-btn" aria-label="Like item" aria-pressed="false">
+            <svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor"
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
+                   4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 
+                   3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 
+                   8.5c0 3.78-3.4 6.86-8.55 
+                   11.54L12 21.35z"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="image">
+          <img src="item-1.png" alt="Common Projects Bball High White" onerror="this.src='https://via.placeholder.com/100?text=Image';" />
+        </div>
+
+        <div class="description">
+          <span class="brand">Common Projects</span>
+          <span class="name">Bball High</span>
+          <span class="variant">White</span>
+        </div>
+
+        <div class="quantity">
+          <button class="qty-btn minus-btn" aria-label="Decrease quantity">−</button>
+          <input type="number" min="1" max="100" value="1" aria-label="Quantity" />
+          <button class="qty-btn plus-btn" aria-label="Increase quantity">+</button>
+        </div>
+
+        <div class="total-price" aria-label="Total price">$549</div>
+      </div>
+
+      <!-- Product #2 -->
+      <div class="item" data-id="2">
+        <div class="buttons">
+          <button class="icon-btn delete-btn" aria-label="Remove item">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M9 3v1H4v2h16V4h-5V3H9zm2 6v8h2v-8h-2zm-4 0v8h2v-8H7zm8 0v8h2v-8h-2zM5 9h14v10c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V9z"/>
+            </svg>
+          </button>
+          <button class="icon-btn like-btn" aria-label="Like item" aria-pressed="false">
+            <svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor"
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
+                   4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 
+                   3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 
+                   8.5c0 3.78-3.4 6.86-8.55 
+                   11.54L12 21.35z"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="image">
+          <img src="item-2.png" alt="Maison Margiela Future Sneakers White" onerror="this.src='https://via.placeholder.com/100?text=Image';" />
+        </div>
+
+        <div class="description">
+          <span class="brand">Maison Margiela</span>
+          <span class="name">Future Sneakers</span>
+          <span class="variant">White</span>
+        </div>
+
+        <div class="quantity">
+          <button class="qty-btn minus-btn" aria-label="Decrease quantity">−</button>
+          <input type="number" min="1" max="100" value="1" aria-label="Quantity" />
+          <button class="qty-btn plus-btn" aria-label="Increase quantity">+</button>
+        </div>
+
+        <div class="total-price" aria-label="Total price">$870</div>
+      </div>
+
+      <!-- Product #3 -->
+      <div class="item" data-id="3">
+        <div class="buttons">
+          <button class="icon-btn delete-btn" aria-label="Remove item">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M9 3v1H4v2h16V4h-5V3H9zm2 6v8h2v-8h-2zm-4 0v8h2v-8H7zm8 0v8h2v-8h-2zM5 9h14v10c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V9z"/>
+            </svg>
+          </button>
+          <button class="icon-btn like-btn" aria-label="Like item" aria-pressed="false">
+            <svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor"
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
+                   4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 
+                   3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 
+                   8.5c0 3.78-3.4 6.86-8.55 
+                   11.54L12 21.35z"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="image">
+          <img src="item-3.png" alt="Our Legacy Brushed Scarf Brown" onerror="this.src='https://via.placeholder.com/100?text=Image';" />
+        </div>
+
+        <div class="description">
+          <span class="brand">Our Legacy</span>
+          <span class="name">Brushed Scarf</span>
+          <span class="variant">Brown</span>
+        </div>
+
+        <div class="quantity">
+          <button class="qty-btn minus-btn" aria-label="Decrease quantity">−</button>
+          <input type="number" min="1" max="100" value="1" aria-label="Quantity" />
+          <button class="qty-btn plus-btn" aria-label="Increase quantity">+</button>
+        </div>
+
+        <div class="total-price" aria-label="Total price">$349</div>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="left">
+        <button id="continue-shopping" class="action-btn">Continue Shopping</button>
+      </div>
+      <div class="right">
+        <div class="totals">
+          <div class="line">
+            <span>Subtotal</span>
+            <span id="subtotal-display">$1,768</span>
+          </div>
+          <div class="line">
+            <span>Shipping</span>
+            <span id="shipping-display">Free</span>
+          </div>
+          <div class="line total">
+            <span>Total</span>
+            <span id="total-display">$1,768</span>
+          </div>
+        </div>
+        <button id="checkout" class="primary-btn">Checkout</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>&copy; <span id="year"></span> THEUSSTORE. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
